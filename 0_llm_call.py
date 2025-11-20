@@ -9,7 +9,7 @@ load_dotenv()
 model = Groq(id="llama-3.3-70b-versatile")
 
 # Mensagem do usuário
-user_message = Message(role="user", content="Olá, meu nome é Rodrigo")
+user_message = Message(role="user", content="Olá, meu nome é Andre")
 
 # Mensagem assistente
 assistant_message = Message(role="assistant", content="")
