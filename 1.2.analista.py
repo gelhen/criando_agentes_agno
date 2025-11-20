@@ -11,5 +11,5 @@ agent = Agent(
     #debug_mode=True,
     instructions="Use tabelas para mostrar a informação final. Não inclua nenhum outro texto."
 )
-
+# O parâmetro 'stream=True' permite que as respostas sejam exibidas em tempo real, à medida que são geradas.
 agent.print_response("Qual é a cotação atual do Ouro, e o nome do ativo para investimento", stream=True)
