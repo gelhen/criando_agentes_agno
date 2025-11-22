@@ -19,7 +19,7 @@ def celsius_to_fh(temperatura_celsius: float):
     return (temperatura_celsius * 9/5) + 32
 
 
-model = OpenAIChat(id="gpt-5-mini")
+model = OpenAIChat(id="gpt-5-nano")
 agent = Agent(
     model=model,
     tools=[
