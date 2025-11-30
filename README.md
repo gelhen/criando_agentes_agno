@@ -73,3 +73,8 @@ cd agent-ui
 npm run dev
 ```
 
+## para dorar o app
+```bash
+uv run test_my_os.py
+```
+

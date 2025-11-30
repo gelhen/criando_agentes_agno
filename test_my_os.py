@@ -18,9 +18,11 @@ agent_os = AgentOS(
     description="My first AgentOS",
     agents=[assistant],
 )
-
+# uma vez instanciado o agente, jogamos na variavel app
 app = agent_os.get_app()
 
 if __name__ == "__main__":
-    # Default port is 7777; change with port=...
+    # O método serve do AgentOS inicia o servidor web para o app,
+    #  permitindo acessar a aplicação na porta especificada (padrão 7777).
+    # app= nome do arquivo, que á o arquivo que tem o app
     agent_os.serve(app="test_my_os:app", reload=True)
