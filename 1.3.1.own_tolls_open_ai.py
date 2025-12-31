@@ -6,6 +6,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+#importante documentar a função, assim o modelo pode entender melhor
+#utilizar docstring explicando o que a funão faz, parametros de entrada
+#e o retorno
 def celsius_to_fh(temperatura_celsius: float):
     """
     Converte uma temperatura de Celsius para Fahrenheit.
@@ -29,4 +32,6 @@ agent = Agent(
     debug_mode=True
 )
 
-agent.print_response("Use suas ferramentas para pesquisar a temperatura de hoje em Chapecó em Fahrenheit")
+agent.print_response(
+    "Use suas ferramentas para pesquisar a temperatura de hoje em Chapecó em Fahrenheit"
+)
